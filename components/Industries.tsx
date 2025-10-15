@@ -1,7 +1,7 @@
 ﻿'use client'
 
 import { motion } from 'framer-motion'
-import { Building2, ShoppingCart, Code, Users } from 'lucide-react'
+import { Building2, ShoppingCart, Users, Wrench, Utensils, ShieldCheck, HeartHandshake } from 'lucide-react'
 
 const Industries = () => {
   const industries = [
@@ -13,25 +13,46 @@ const Industries = () => {
       gradient: 'from-electric-blue to-neon-cyan',
     },
     {
-      icon: ShoppingCart,
-      title: 'E-commerce',
-      description: 'Streamline inventory management, order processing, customer service, and marketing campaigns.',
-      benefits: ['Order Processing', 'Inventory Sync', 'Customer Support'],
+      icon: Wrench,
+      title: 'Professional Services & HVAC',
+      description: 'Book jobs faster with automated scheduling, quotes, invoicing, and field updates.',
+      benefits: ['Job Scheduling', 'Quote to Invoice', 'Technician Updates'],
       gradient: 'from-neon-cyan to-neon-purple',
     },
     {
-      icon: Code,
-      title: 'SaaS & Tech',
-      description: 'Automate user onboarding, support tickets, data analytics, and deployment workflows.',
-      benefits: ['User Onboarding', 'DevOps Automation', 'Analytics'],
+      icon: Utensils,
+      title: 'Restaurant',
+      description: 'Streamline online orders, reservations, feedback, inventory, and staff alerts.',
+      benefits: ['Order Routing', 'Reservations', 'Inventory Alerts'],
       gradient: 'from-neon-purple to-electric-blue',
+    },
+    {
+      icon: ShoppingCart,
+      title: 'E-Commerce',
+      description: 'Sync inventory, automate order processing, returns, customer support, and marketing.',
+      benefits: ['Order Processing', 'Inventory Sync', 'Customer Support'],
+      gradient: 'from-electric-blue to-neon-purple',
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Insurance',
+      description: 'Accelerate lead intake, policy quotes, claims intake, and client communications.',
+      benefits: ['Lead Intake', 'Quote Automation', 'Claims Intake'],
+      gradient: 'from-neon-cyan to-neon-purple',
     },
     {
       icon: Users,
       title: 'Operations & HR',
       description: 'Transform hiring processes, employee onboarding, payroll management, and compliance tracking.',
       benefits: ['Recruitment', 'Onboarding', 'Payroll Automation'],
-      gradient: 'from-electric-blue to-neon-purple',
+      gradient: 'from-neon-purple to-electric-blue',
+    },
+    {
+      icon: HeartHandshake,
+      title: 'Nonprofits & Community',
+      description: 'Automate donor journeys, event coordination, volunteer onboarding, and reporting.',
+      benefits: ['Donor Journeys', 'Event Automation', 'Volunteer Onboarding'],
+      gradient: 'from-electric-blue to-neon-cyan',
     },
   ]
 
