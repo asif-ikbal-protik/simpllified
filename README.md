@@ -2,7 +2,7 @@
 
 A modern, responsive Next.js 14 + Turbopack website showcasing Simpllified AI's AI-powered workflow automation platform.
 
-## ðŸš€ Features
+## Features
 
 - **Modern Tech Stack**: Built with Next.js 14, React 18, TypeScript, and Turbopack
 - **Stunning Visuals**: Full black background with glassmorphism design elements
@@ -12,7 +12,7 @@ A modern, responsive Next.js 14 + Turbopack website showcasing Simpllified AI's 
 - **Performance Optimized**: Lazy loading, optimized images, and smooth transitions
 - **SEO Ready**: Semantic HTML with proper meta tags and Open Graph setup
 
-## ðŸŽ¨ Design Features
+## Design Features
 
 - **Glassmorphism UI**: Beautiful glass-style cards with backdrop blur effects
 - **Gradient Accents**: Electric blue, cyan, and neon purple gradients
@@ -20,7 +20,7 @@ A modern, responsive Next.js 14 + Turbopack website showcasing Simpllified AI's 
 - **Interactive Elements**: Hover effects with depth and glow reflections
 - **Modern Typography**: Using Inter, Sora, and Poppins fonts
 
-## ðŸ“¦ Installation
+## Installation
 
 1. Install dependencies:
 ```bash
@@ -34,32 +34,32 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## ðŸ—ï¸ Project Structure
+## Project Structure
 
 ```
 Simpllified AI-website/
-â”œâ”€â”€ app/
-â”‚   â”œâ”€â”€ layout.tsx          # Root layout with metadata
-â”‚   â”œâ”€â”€ page.tsx            # Main home page
-â”‚   â””â”€â”€ globals.css         # Global styles and utilities
-â”œâ”€â”€ components/
-â”‚   â”œâ”€â”€ Navbar.tsx          # Navigation bar
-â”‚   â”œâ”€â”€ Hero.tsx            # Hero section
-â”‚   â”œâ”€â”€ Benefits.tsx        # Key benefits section
-â”‚   â”œâ”€â”€ HowItWorks.tsx      # How it works timeline
-â”‚   â”œâ”€â”€ Industries.tsx      # Industry use cases
-â”‚   â”œâ”€â”€ About.tsx           # About section
-â”‚   â”œâ”€â”€ Testimonials.tsx    # Testimonials carousel
-â”‚   â”œâ”€â”€ CTA.tsx             # Call-to-action section
-â”‚   â”œâ”€â”€ Footer.tsx          # Footer
-â”‚   â””â”€â”€ ParticleBackground.tsx  # Animated particle background
-â”œâ”€â”€ public/
-â”‚   â”œâ”€â”€ nav-logo.png        # Navbar logo (placeholder)
-â”‚   â””â”€â”€ footer-logo.png     # Footer logo (placeholder)
-â””â”€â”€ tailwind.config.ts      # Tailwind configuration
+app/
+ayout.tsx          # Root layout with metadata
+page.tsx            # Main home page
+globals.css         # Global styles and utilities
+omponents/
+Navbar.tsx          # Navigation bar
+Hero.tsx            # Hero section
+Benefits.tsx        # Key benefits section
+HowItWorks.tsx      # How it works timeline
+Industries.tsx      # Industry use cases
+About.tsx           # About section
+Testimonials.tsx    # Testimonials carousel
+CTA.tsx             # Call-to-action section
+Footer.tsx          # Footer
+ParticleBackground.tsx  # Animated particle background
+public/
+nav-logo.png        # Navbar logo (placeholder)
+footer-logo.png     # Footer logo (placeholder)
+tailwind.config.ts      # Tailwind configuration
 ```
 
-## ðŸŽ¯ Sections
+## Sections
 
 1. **Navbar**: Transparent glassmorphic navigation with smooth scroll
 2. **Hero**: Full-screen immersive hero with animated gradients
@@ -71,7 +71,7 @@ Simpllified AI-website/
 8. **CTA**: Call-to-action section with contact methods
 9. **Footer**: Comprehensive footer with links and social media
 
-## ðŸ› ï¸ Technologies Used
+## Technologies Used
 
 - **Framework**: Next.js 14 with Turbopack
 - **Styling**: Tailwind CSS
@@ -80,13 +80,13 @@ Simpllified AI-website/
 - **Language**: TypeScript
 - **Font**: Inter, Sora, Poppins (Google Fonts)
 
-## ðŸ“± Responsive Breakpoints
+## Responsive Breakpoints
 
 - **Mobile**: < 768px
 - **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
 
-## ðŸŽ¨ Color Palette
+## Color Palette
 
 - **Electric Blue**: `#00D4FF`
 - **Neon Cyan**: `#00FFF0`
@@ -94,7 +94,7 @@ Simpllified AI-website/
 - **Background**: `#000000`
 - **Glass White**: `rgba(255, 255, 255, 0.1)`
 
-## ðŸ“ Customization
+## Customization
 
 ### Update Logo
 
@@ -118,7 +118,7 @@ colors: {
 
 All content is located in the individual component files in the `components/` directory. Simply edit the text, titles, and descriptions as needed.
 
-## ðŸš€ Deployment
+## Deployment
 
 ### Deploy to Vercel
 
@@ -137,16 +137,16 @@ npm run build
 npm start
 ```
 
-## ðŸ“„ License
+## License
 
 This project is created for Simpllified AI. All rights reserved.
 
-## ðŸ¤ Support
+## Support
 
 For support, email contact@Simpllified AI.com or visit our website.
 
 ---
 
-Built with ðŸ’™ for seamless automation
+Built with <3 for seamless automation
 
 
