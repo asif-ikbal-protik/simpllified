@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* stylelint-disable */
 :root {
   color-scheme: dark;
   --background: #05020f;
