@@ -1,162 +1,90 @@
 ﻿'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Sparkles, Zap } from 'lucide-react'
+import { ArrowRight, Zap, Sparkles } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Animated Background Gradients */}
-      <div className="absolute inset-0 overflow-hidden">
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className="absolute top-1/4 -left-1/4 w-96 h-96 bg-electric-blue/20 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1, 1.3, 1],
-            rotate: [0, -90, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-neon-purple/20 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{
-            scale: [1, 1.1, 1],
-            x: [0, 100, 0],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className="absolute top-1/2 left-1/2 w-96 h-96 bg-neon-cyan/10 rounded-full blur-3xl"
-        />
-      </div>
-
-      <div className="relative container mx-auto px-6 z-10">
-        <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
+    <section id="home" className="relative min-h-screen grid place-items-center overflow-hidden pt-20">
+      <div className="w-full">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Eyebrow */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full mb-8"
+            className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8"
           >
             <Sparkles className="w-4 h-4 text-electric-blue" />
-            <span className="text-sm text-gray-300">AI-Powered Automation Platform</span>
+            <span className="text-sm text-gray-300">Powering Your Business with AI Agents</span>
           </motion.div>
 
-          {/* Main Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="font-extrabold leading-tight tracking-tight text-[6vw] sm:text-5xl md:text-6xl lg:text-7xl mb-6"
           >
-            <span className="gradient-text">Seamless AI Automation</span>
-            <br />
-            <span className="text-white">From Startup to Scale</span>
+            <span className="block w-full text-center whitespace-nowrap gradient-text">Automate Your Business with AI AGENTS</span>
+            <span className="block w-full text-center whitespace-nowrap text-white">That Call, Chats & Work for You - 24/7</span>
           </motion.h1>
 
-          {/* Subheadline */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto"
           >
-            Streamline, optimize, and grow with Simpllified AI your partner in intelligent automation.
+            Streamline, optimize, and grow with Simpllified AI — your partner in intelligent automation.
           </motion.p>
 
-          {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6"
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            {/* Primary CTA */}
-            <motion.a
-              href="#benefits"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 bg-gradient-electric rounded-lg font-semibold text-black overflow-hidden shadow-glow"
-            >
-              <span className="relative z-10 flex items-center space-x-2">
+            <a href="#benefits" className="px-8 py-4 bg-gradient-electric rounded-lg font-semibold text-black shadow-glow">
+              <span className="inline-flex items-center gap-2">
                 <span>Explore Solutions</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5" />
               </span>
-            </motion.a>
-
-            {/* Secondary CTA */}
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 rounded-lg font-semibold text-white overflow-hidden glass-strong border border-electric-blue/30"
-            >
-              <span className="relative z-10 flex items-center space-x-2">
+            </a>
+            <a href="#contact" className="px-8 py-4 rounded-lg font-semibold text-white glass-strong border border-electric-blue/30">
+              <span className="inline-flex items-center gap-2">
                 <Zap className="w-5 h-5 text-electric-blue" />
                 <span>Talk to Us</span>
               </span>
-            </motion.a>
+            </a>
           </motion.div>
 
-          {/* Floating Elements */}
+          {/* Statistics */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mt-16 max-w-screen-xl mx-auto px-4 flex flex-nowrap items-stretch justify-center gap-6 overflow-x-auto"
           >
             {[
-              { label: '10x', desc: 'Faster Workflows' },
-              { label: '60%', desc: 'Cost Reduction' },
-              { label: '24/7', desc: 'Automated Systems' },
+              { label: '50+', desc: 'AI Projects Completed' },
+              { label: '98%', desc: 'Client Satisfaction' },
+              { label: '24/7', desc: 'Support Available' },
+              { label: '99.9%', desc: 'Uptime' },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1 + index * 0.2 }}
-                whileHover={{ y: -5 }}
-                className="glass p-6 rounded-xl text-center group hover:shadow-glow transition-all duration-300"
+                transition={{ delay: 0.5 + index * 0.1 }}
+                className="glass p-6 rounded-xl border border-electric-blue/20 hover:border-electric-blue/40 transition-all duration-300 whitespace-nowrap flex flex-col items-center justify-center text-center min-w-[220px]"
               >
-                <div className="text-4xl font-bold gradient-text mb-2">{stat.label}</div>
-                <div className="text-gray-400 text-sm">{stat.desc}</div>
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">{stat.label}</div>
+                <div className="text-gray-400 text-sm md:text-base">{stat.desc}</div>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, y: [0, 10, 0] }}
-        transition={{
-          opacity: { delay: 1.5 },
-          y: { duration: 2, repeat: Infinity, ease: "easeInOut" }
-        }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-gray-600 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gradient-electric rounded-full mt-2"></div>
-        </div>
-      </motion.div>
     </section>
   )
 }

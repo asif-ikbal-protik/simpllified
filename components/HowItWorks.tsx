@@ -96,7 +96,7 @@ const HowItWorks = () => {
                       
                       <div className="relative">
                         {/* Step Number */}
-                        <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-electric opacity-20 mb-4">
+                        <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-electric opacity-60 mb-4">
                           {step.number}
                         </div>
                         

@@ -114,38 +114,6 @@ const Benefits = () => {
             </motion.div>
           ))}
         </motion.div>
-
-        {/* Bottom Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="mt-20 glass p-8 rounded-2xl max-w-4xl mx-auto"
-        >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { number: '500+', label: 'Active Users' },
-              { number: '1M+', label: 'Tasks Automated' },
-              { number: '99.9%', label: 'Uptime' },
-              { number: '24/7', label: 'Support' },
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.6 + index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold gradient-text mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   )
